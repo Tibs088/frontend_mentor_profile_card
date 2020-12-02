@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Profile card component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: hsl(185, 75%, 39%);
+      background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+      text-align: center;
+      font-family: 'Kumbah Sans', sans-serif;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .profile-card {
+      width: calc(309.44px + 2.8vw);
+      border-radius: 15px;
+      background-color: white;
+      margin: 150px auto;
+    }
+
+    .profile-card-head {
+      background-image: url('./images/bg-pattern-card.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 140px;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .profile-card-img {
+      text-align: center;
+      padding: 25%;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      border: 5px solid white;
+      top: 60%;
+      position: relative;
+    }
+
+    .profile-card-name-section {
+      padding: 75px 0px 25px;
+    }
+
+    .profile-card-content {
+      border-top: solid black 0.5px;
+    }
+
+    .content-block {
+      width: 28%;
+      display: inline-block;
+    }
+
+    .bold-text {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: hsl(229, 23%, 23%);
+    }
+
+    .light-text {
+      font-weight: 400;
+      padding-left: 5px;
+    }
+
+    .location {
+      font-weight: 400;
+      padding-top: 15px;
+    }
+
+    .name {
+      font-size: 0.625rem;
+      letter-spacing: 0.1rem;
+      padding-top: 5px;
+      color: hsl(0, 0%, 59%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class='profile-card'>
+    <div class='profile-card-head'>
+      <div class='profile-card-img'>
+        <img class='profile-img' src='./images/image-victor.jpg' />
+      </div>
+    </div>
+    <div class='profile-card-name-section'>
+      <p class='bold-text'>Victor Crest <span class='light-text'>26</span></p>
+      <p class='location'>London</p>
+    </div>
+    <div class='profile-card-content'>
+      <div class='content-block'>
+        <p class='bold-text'>80K</p>
+        <p class='name'>Followers</p>
+      </div>
+      <div class='content-block'>
+        <p class='bold-text'>803K</p>
+        <p class='name'>Likes</p>
+      </div>
+      <div class='content-block'>
+        <p class='bold-text'>1.4k</p>
+        <p class='name'>Photos</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Matthew Hartley</a>.
+  </div>
+</body>
+
+</html>
